@@ -1,0 +1,20 @@
+body {
+    background: #1d2630;
+    color: #fff;
+}
+
+#Update {
+    display: none;
+}
+
+/* Styling for table header */
+#crudTable th {
+    background-color: #1d2630;
+    color: #fff; /* Set text color if needed */
+}
+
+/* Styling for table rows */
+#crudTable td {
+    background-color: #1d2630;
+    color: #fff; /* Set text color if needed */
+}
