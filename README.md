@@ -22,11 +22,11 @@
     ![iScreen Shoter - Google Chrome - 240309210910](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/f2d37d0b-700b-43a4-9fab-08b5d91098db)
 
   - **AddData()**: Adds a new control to controlList if form is valid, checks for duplicate Main Control IDs, updates local storage, and refreshes table.
-    ![iScreen Shoter - Google Chrome - 240309211048](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/daa16251-c8c7-43e5-85f6-6c5dd7b4d016)
+![iScreen Shoter - Google Chrome - 240309211048](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/daa16251-c8c7-43e5-85f6-6c5dd7b4d016)
 ![iScreen Shoter - Google Chrome - 240309210804](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d1925a50-2753-4fc2-b872-9d3fe0ca929b)
 
   - **deleteData(index)**: Deletes a control at specified index, confirming deletion before updating.
-  - ![iScreen Shoter - Google Chrome - 240309210815](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/3bb5f389-ba95-4f58-8287-707ecf8cb741)
+ ![iScreen Shoter - Google Chrome - 240309210815](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/3bb5f389-ba95-4f58-8287-707ecf8cb741)
 
   - **updateData(index)**: Enables control data editing in the UI, highlights selected row, disables delete buttons, updates controlList after validation, refreshes table, and clears form on successful update.
     ![iScreen Shoter - 20240309211345028](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/186f25b1-a942-4379-a44b-862ff65ae015)
