@@ -1,6 +1,8 @@
+
 # Security Control Inventory Web App - Local Storage
  - 🔨 Build a web app with local storage using HTML, Javascript, and CSS.
    ![iScreen Shoter - 20240309210201445](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/7b1340d5-b017-4df5-ab9c-f92a073fcf38)
+   https://miguelangelhorta.github.io/Security-Control-Inventory/
    
 ## Pre steps for building
 - Open Visual Studio to organize files and make edits (download if not already installed)
