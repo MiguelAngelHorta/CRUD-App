@@ -21,8 +21,7 @@
   - **showData()**: Populates HTML table with control information, retrieving data from local storage.
     ![iScreen Shoter - Google Chrome - 240309210910](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/f2d37d0b-700b-43a4-9fab-08b5d91098db)
 
-  - **AddData()**: Adds a new control to controlList if form is valid, checks for duplicate Main Control IDs, updates local storage, and refreshes table.
-    
+  - **AddData()**: Adds a new control to controlList if form is valid, checks for duplicate Main Control IDs, updates local storage, and refreshes table. 
   ![iScreen Shoter - Google Chrome - 240309211048](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/daa16251-c8c7-43e5-85f6-6c5dd7b4d016)
   ![iScreen Shoter - Google Chrome - 240309210804](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d1925a50-2753-4fc2-b872-9d3fe0ca929b)
 
