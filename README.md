@@ -35,3 +35,4 @@
      - ![iScreen Shoter - Google Chrome - 240309210447](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/a1091c95-e736-4b9b-b54f-6d60f7e617cf)
 
 - Create a CSS file
+    - This CSS script structures the visual design of the Security Control Inventory web page by defining a dark gray background with white text, styling the table with dark headers and rows, and incorporating visual cues for disabled buttons and edited rows, contributing to a cohesive and user-friendly interface.
