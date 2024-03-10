@@ -4,7 +4,7 @@
    - Add and update your security controls with ease through this [UI web page](https://miguelangelhorta.github.io/Security-Control-Inventory/) 
    ![iScreen Shoter - 20240309210201445](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/7b1340d5-b017-4df5-ab9c-f92a073fcf38)
    
-## Pre steps for building
+## Pre Steps
 - Open Visual Studio to organize files and make edits (download if not already installed)
   -   ![download](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/467f65d5-91e9-47ed-8f0b-a4f717f997cf)
 - Sync files within a specified folder with Git repo and enable auto-save
@@ -17,7 +17,7 @@
   - [Get started with Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
-### Create files for the web app
+### Create Files for the Web App
 - Create an HTML file
   - This HTML code is a web page for a Security Control Inventory application. It uses Bootstrap for styling and includes a form to enter control details, action buttons for updating controls, and a table to display control information. The page integrates custom CSS for additional styling and relies on JavaScript functions to manage data interactions.
 - Create a Javascript file
