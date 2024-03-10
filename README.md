@@ -6,7 +6,8 @@
 - Open Visual Studio to organize files and make edits (download if not already installed)
   -   ![download](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/467f65d5-91e9-47ed-8f0b-a4f717f997cf)
 - Sync files within a specified folder with Git repo and enable auto-save
-- 
+  - ![iScreen Shoter - Code - 240309213834](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/9a55effc-e050-46f8-994b-702c1a90a7a9)
+
 - Ensure live server extension is installed for the dev local server
   - ![iScreen Shoter - Code - 240309213554](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d393e4fc-31bd-4483-9d1a-eb66ef9ae174)
 
