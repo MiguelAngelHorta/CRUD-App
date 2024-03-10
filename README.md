@@ -8,6 +8,18 @@
 
 ### Create files for the web app
 - Create an HTML file
-  - This HTML code is a web page for a Security Control Inventory application. It uses Bootstrap for styling and includes a form to enter control details, action buttons for adding and updating controls, and a table to display control information. The page integrates custom CSS for additional styling and relies on JavaScript functions to manage data interactions. The goal is to provide users with an interface to input, update, and view security controls in a structured format.
+  - This HTML code is a web page for a Security Control Inventory application. It uses Bootstrap for styling and includes a form to enter control details, action buttons for updating controls, and a table to display control information. The page integrates custom CSS for additional styling and relies on JavaScript functions to manage data interactions.
 - Create a Javascript file
+  - validateForm(): Validates form fields for completeness, alerts for missing information, and returns true if valid, false otherwise.
+
+  - showData(): Populates HTML table with control information, retrieving data from local storage.
+
+  - AddData(): Adds a new control to controlList if form is valid, checks for duplicate Main Control IDs, updates local storage, and refreshes table.
+
+  - deleteData(index): Deletes a control at specified index, confirming deletion before updating.
+
+  - updateData(index): Enables control data editing in the UI, highlights selected row, disables delete buttons, updates controlList after validation, refreshes table, and clears form on successful update.
+
+  - downloadCSV(): Creates CSV data from HTML table, generates downloadable CSV file, and releases object URL after download.
+    
 - Create a CSS file
