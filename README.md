@@ -4,9 +4,15 @@
    
 ## Pre steps for building
 - Open Visual Studio to organize files and make edits (download if not already installed)
+  -   ![download](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/467f65d5-91e9-47ed-8f0b-a4f717f997cf)
 - Sync files within a specified folder with Git repo and enable auto-save
+- 
 - Ensure live server extension is installed for the dev local server
+  - ![iScreen Shoter - Code - 240309213554](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d393e4fc-31bd-4483-9d1a-eb66ef9ae174)
+
 - Reference bootstrap open-source front-end framework code for pre-design and pre-built components for javascript
+  - [Get started with Bootstrap]((https://getbootstrap.com/docs/5.3/getting-started/introduction/))
+
 
 ### Create files for the web app
 - Create an HTML file
