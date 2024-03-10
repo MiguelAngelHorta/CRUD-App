@@ -12,7 +12,7 @@
   - ![iScreen Shoter - Code - 240309213554](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d393e4fc-31bd-4483-9d1a-eb66ef9ae174)
 
 - Reference bootstrap open-source front-end framework code for pre-design and pre-built components for javascript
-  - [Get started with Bootstrap]((https://getbootstrap.com/docs/5.3/getting-started/introduction/))
+  - [Get started with Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
 ### Create files for the web app
