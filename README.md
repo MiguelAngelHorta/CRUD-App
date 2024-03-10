@@ -17,17 +17,20 @@
 ![iScreen Shoter - Google Chrome - 240309210705](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/81f9a066-0ec9-4331-8a5f-852261875601)
 ![iScreen Shoter - Google Chrome - 240309210729](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/e722c182-ed5b-4b55-b176-11894cd4712a)
 ![iScreen Shoter - Google Chrome - 240309210747](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/9af18fa1-8a21-4889-9600-5633c514437a)
-![iScreen Shoter - Google Chrome - 240309210815](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/3bb5f389-ba95-4f58-8287-707ecf8cb741)
 
   - **showData()**: Populates HTML table with control information, retrieving data from local storage.
     ![iScreen Shoter - Google Chrome - 240309210910](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/f2d37d0b-700b-43a4-9fab-08b5d91098db)
-![iScreen Shoter - Google Chrome - 240309211048](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/daa16251-c8c7-43e5-85f6-6c5dd7b4d016)
-![iScreen Shoter - Google Chrome - 240309210804](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d1925a50-2753-4fc2-b872-9d3fe0ca929b)
 
   - **AddData()**: Adds a new control to controlList if form is valid, checks for duplicate Main Control IDs, updates local storage, and refreshes table.
-    
-  - deleteData(index): Deletes a control at specified index, confirming deletion before updating.
+    ![iScreen Shoter - Google Chrome - 240309211048](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/daa16251-c8c7-43e5-85f6-6c5dd7b4d016)
+![iScreen Shoter - Google Chrome - 240309210804](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d1925a50-2753-4fc2-b872-9d3fe0ca929b)
+
+  - **deleteData(index)**: Deletes a control at specified index, confirming deletion before updating.
+  - ![iScreen Shoter - Google Chrome - 240309210815](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/3bb5f389-ba95-4f58-8287-707ecf8cb741)
+
   - **updateData(index)**: Enables control data editing in the UI, highlights selected row, disables delete buttons, updates controlList after validation, refreshes table, and clears form on successful update.
+    ![iScreen Shoter - 20240309211345028](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/186f25b1-a942-4379-a44b-862ff65ae015)
+
   - **downloadCSV()**: Creates CSV data from HTML table, generates downloadable CSV file, and releases object URL after download.
     ![iScreen Shoter - Google Chrome - 240309210447](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/a1091c95-e736-4b9b-b54f-6d60f7e617cf)
 
