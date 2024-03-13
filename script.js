@@ -122,6 +122,10 @@ function AddData() {
         document.getElementById("mainDescription").value = "";
         document.getElementById("domain").value = "";
         document.getElementById("scope").value = "";
+
+        // Display the success alert
+        alert("Control added successfully!");
+
       }
     }
   }
