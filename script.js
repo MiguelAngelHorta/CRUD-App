@@ -31,7 +31,28 @@ function showData() {
   var controlList;
 
   if (localStorage.getItem("controlList") == null) {
-    controlList = [];
+    controlList = [{
+      mainID: "0001",
+      mainDescription: "Default Control 1: Implement access controls to ensure that only authorized individuals or systems have access to resources, data, and systems.",
+      domain: "Identity and Access Management (IAM)",
+      scope: "Yes",
+    },
+    {
+      mainID: "0002",
+      mainDescription: "Default Control 2: Regularly apply patches and updates to software, operating systems, and applications to address known vulnerabilities and reduce the risk of exploitation.",
+      domain: "Security Architecture and Engineering",
+      scope: "Yes",
+    },
+    {
+      mainID: "0003",
+      mainDescription: "Default Control 3: Enforce a blockchain-based immutable audit trail for all financial transactions.",
+      domain: "Security Operations",
+      scope: "No",
+    },
+    // Add more default data as needed
+  ];
+  localStorage.setItem("controlList", JSON.stringify(controlList));
+
   } else {
     controlList = JSON.parse(localStorage.getItem("controlList"));
   }
