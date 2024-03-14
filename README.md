@@ -32,6 +32,7 @@
 
   - **AddData()**: Adds a new control to controlList if form is valid, checks for duplicate Main Control IDs, updates local storage, and refreshes table. 
     - ![iScreen Shoter - Google Chrome - 240309210804](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/d1925a50-2753-4fc2-b872-9d3fe0ca929b)
+    - ![iScreen Shoter - Google Chrome - 240313204151](https://github.com/MiguelAngelHorta/Security-Controls-Inventory/assets/106134627/81d807a2-ef3a-469d-a347-440368423bca)
 
   - **deleteData(index)**: Deletes a control at specified index, confirming deletion before updating.
     - ![iScreen Shoter - Google Chrome - 240309210815](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/3bb5f389-ba95-4f58-8287-707ecf8cb741)
