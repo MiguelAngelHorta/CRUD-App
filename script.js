@@ -1,5 +1,5 @@
 function validateForm() {
-    var mainID = document.getElementById("mainID").value;
+    var mainID = document.getElementById("mainID").value.toLowerCase();;
     var mainDescription = document.getElementById("mainDescription").value;
     var domain = document.getElementById("domain").value;
     var scope = document.getElementById("scope").value;
@@ -148,6 +148,7 @@ function AddData() {
     }
 }
 
+
 function updateData(index) {
   document.getElementById("Add Control").style.display = "none";
   document.getElementById("Update").style.display = "block";
@@ -186,10 +187,10 @@ function updateData(index) {
 
     document.getElementById("Update").onclick = function () {
       if (validateForm()) {
-        var updatedID = document.getElementById("mainID").value;
+        var updatedID = document.getElementById("mainID").value.toLowerCase(); // Convert to lowercase
 
         var isDuplicate = controlList.some(function (item, idx) {
-          return idx !== index && item.mainID === updatedID;
+          return idx !== index && item.mainID.toLowerCase() === updatedID; // Convert to lowercase
         });
 
         if (isDuplicate) {
