@@ -149,31 +149,34 @@ function AddData() {
 }
 
 function updateData(index) {
-    document.getElementById("Add Control").style.display = "none";
-    document.getElementById("Update").style.display = "block";
-  
-    var highlightedRow = document.querySelector(".edit-highlight");
-    if (highlightedRow) {
-        highlightedRow.classList.remove("edit-highlight");
-    }
+  document.getElementById("Add Control").style.display = "none";
+  document.getElementById("Update").style.display = "block";
 
-    // Add highlight to the currently edited row
-    var rows = document.querySelectorAll("#crudTable tbody tr");
-    rows[index].classList.add("edit-highlight");
+  var highlightedRow = document.querySelector(".edit-highlight");
+  if (highlightedRow) {
+    highlightedRow.classList.remove("edit-highlight");
+  }
 
-    // Select all delete buttons within the table body
-    var deleteButtons = document.querySelectorAll("#crudTable tbody .btn-danger");
-  
-    // Disable all delete buttons
-    deleteButtons.forEach(function (button) {
-      button.disabled = true;
-    });
+  // Add highlight to the currently edited row
+  var rows = document.querySelectorAll("#crudTable tbody tr");
+  rows[index].classList.add("edit-highlight");
 
+  // Select all delete buttons within the table body
+  var deleteButtons = document.querySelectorAll("#crudTable tbody .btn-danger");
+
+  // Disable all delete buttons
+  deleteButtons.forEach(function (button) {
+    button.disabled = true;
+  });
+
+  // Confirmation dialog instead of alert
+  if (confirm("Are you sure you want to update this control?")) {
+    // Proceed with update logic
     var controlList;
     if (localStorage.getItem("controlList") === null) {
-        controlList = [];
+      controlList = [];
     } else {
-        controlList = JSON.parse(localStorage.getItem("controlList"));
+      controlList = JSON.parse(localStorage.getItem("controlList"));
     }
 
     document.getElementById("mainID").value = controlList[index].mainID;
@@ -182,26 +185,54 @@ function updateData(index) {
     document.getElementById("scope").value = controlList[index].scope;
 
     document.getElementById("Update").onclick = function () {
-        if (validateForm()) {
-            controlList[index].mainID = document.getElementById("mainID").value;
-            controlList[index].mainDescription = document.getElementById("mainDescription").value;
-            controlList[index].domain = document.getElementById("domain").value;
-            controlList[index].scope = document.getElementById("scope").value;
+      if (validateForm()) {
+        var updatedID = document.getElementById("mainID").value;
 
-            localStorage.setItem("controlList", JSON.stringify(controlList));
+        var isDuplicate = controlList.some(function (item, idx) {
+          return idx !== index && item.mainID === updatedID;
+        });
 
-            showData();
+        if (isDuplicate) {
+          alert("Error: Main Control ID already exists. Please enter a unique ID.");
+        } else {
+          controlList[index].mainID = updatedID;
+          controlList[index].mainDescription = document.getElementById("mainDescription").value;
+          controlList[index].domain = document.getElementById("domain").value;
+          controlList[index].scope = document.getElementById("scope").value;
 
-            document.getElementById("mainID").value = "";
-            document.getElementById("mainDescription").value = "";
-            document.getElementById("domain").value = "";
-            document.getElementById("scope").value = "";
+          localStorage.setItem("controlList", JSON.stringify(controlList));
 
-            document.getElementById("Add Control").style.display = "block";
-            document.getElementById("Update").style.display = "none";
+          showData();
+
+          document.getElementById("mainID").value = "";
+          document.getElementById("mainDescription").value = "";
+          document.getElementById("domain").value = "";
+          document.getElementById("scope").value = "";
+
+          document.getElementById("Add Control").style.display = "block";
+          document.getElementById("Update").style.display = "none";
+
+          // Enable all delete buttons after updating
+          deleteButtons.forEach(function (button) {
+            button.disabled = false;
+          });
         }
+      }
     };
+  } else {
+    // User canceled the update
+    // Optionally, reset UI elements or display a message
+
+    // Enable all delete buttons after canceling
+    deleteButtons.forEach(function (button) {
+      button.disabled = false;
+    });
+  }
 }
+
+
+
+
 
 function downloadCSV() {
     // Get the table element
