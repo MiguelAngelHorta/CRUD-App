@@ -58,13 +58,13 @@
 	   # Expose port 80 for the web server
 	   EXPOSE 80
 	
-3. build a docker base image
+3. build a docker base image by running this command in the folder
 
     ```bash
     docker build -t my-security-app .
     ```
     
-4. start the container
+4. start the container by running this command in the folder
 
     ```bash
     docker run -d -p 8080:80 my-security-app
