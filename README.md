@@ -69,4 +69,4 @@
     ```bash
     docker run -d -p 8080:80 my-security-app
     ```
-
+5. Access the app through http://localhost:8080 in the browser
