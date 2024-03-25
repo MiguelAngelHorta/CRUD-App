@@ -46,8 +46,29 @@
 - Create a CSS file
     - This CSS script structures the visual design of the Security Control Inventory web page by defining a dark gray background with white text, styling the table with dark headers and rows, and incorporating visual cues for disabled buttons and edited rows, contributing to a cohesive and user-friendly interface.
 
-## Dockerize this app
-- Download and install Docker Desktop for your OS from Docker's official website: https://docs.docker.com/engine/install/.
-- Add a docker file to the folder
-  - 
+	## Dockerize this app
+	- Download and install Docker Desktop for your OS from Docker's official website: https://docs.docker.com/engine/install/.
+	- Add a docker file to the folder
+	
+	   - 
+	   # Base image for a web server
+	   FROM httpd:2.4
+	   
+	   # Copy your web app files to the container's document root
+	   COPY . /usr/local/apache2/htdocs/
+	   
+	   # Expose port 80 for the web server
+	   EXPOSE 80
+	
+	- build a docker base image
+	
+	-
+	docker build -t my-security-app .
+	
+	- start the container
+	
+	-
+	docker run -d -p 8080:80 my-security-app
+![image](https://github.com/MiguelAngelHorta/Security-Controls-Inventory/assets/106134627/6c44bb52-61be-4bea-bebe-9f0bf5490168)
+
 
