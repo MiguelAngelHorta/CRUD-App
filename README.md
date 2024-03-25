@@ -19,7 +19,7 @@
 
 ### Create Files for the Web App
 - Create an HTML file
-  - This HTML code is a web page for a Security Control Inventory application. It uses Bootstrap for styling and includes a form to enter control details, action buttons for updating controls, and a table to display control information. The page integrates custom CSS for additional styling and relies on JavaScript functions to manage data interactions.
+  - This HTML code is a web page for this Security Control Inventory application. It uses Bootstrap for styling and includes a form to enter control details, action buttons for updating controls, and a table to display control information. The page integrates custom CSS for additional styling and relies on JavaScript functions to manage data interactions.
 - Create a Javascript file
   - **validateForm()**: Validates form fields for completeness, alerts for missing information, and returns true if valid, false otherwise.
     - ![iScreen Shoter - Google Chrome - 240309210646](https://github.com/MiguelAngelHorta/CRUD-App/assets/106134627/8210c082-f7d2-4144-a2ea-4976306c3688)
@@ -45,3 +45,9 @@
 
 - Create a CSS file
     - This CSS script structures the visual design of the Security Control Inventory web page by defining a dark gray background with white text, styling the table with dark headers and rows, and incorporating visual cues for disabled buttons and edited rows, contributing to a cohesive and user-friendly interface.
+
+## Dockerize this app
+- Download and install Docker Desktop for your OS from Docker's official website: https://docs.docker.com/engine/install/.
+- Add a docker file to the folder
+  - 
+
