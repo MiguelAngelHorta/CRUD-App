@@ -70,3 +70,11 @@
     docker run -d -p 8080:80 my-security-app
     ```
 5. Access the app through http://localhost:8080 in the browser
+
+## Host this app in AWS
+1. Login to AWS console
+2. create S3 bucket
+3. Load files into S3 bucket
+4. Enable statis website hosting and name index document: index1.html
+5. access site: http://security-controls-inventory.s3.us-east-2.amazonaws.com/CRUD%20App/index.html
+
