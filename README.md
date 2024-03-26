@@ -75,6 +75,20 @@
 1. Login to AWS console
 2. create S3 bucket
 3. Load files into S3 bucket
-4. Enable statis website hosting and name index document: index1.html
-5. access site: http://security-controls-inventory.s3.us-east-2.amazonaws.com/CRUD%20App/index.html
+4. Update permissions of the bucket policy (see allow all permissions below)
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::security-controls-inventory/*"
+        }
+    ]
+} 
+6. Enable statis website hosting and name index document: index1.html
+7. access site: http://security-controls-inventory.s3.us-east-2.amazonaws.com/CRUD%20App/index.html
 
