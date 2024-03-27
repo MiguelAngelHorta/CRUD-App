@@ -91,6 +91,6 @@
     ]
 }
 ```
-6. Enable statis website hosting and name index document: index1.html
+6. Enable static website hosting and name index document: index1.html
 7. access site: http://security-controls-inventory.s3.us-east-2.amazonaws.com/CRUD%20App/index.html
 
