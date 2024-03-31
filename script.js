@@ -217,6 +217,8 @@ function updateData(index) {
           deleteButtons.forEach(function (button) {
             button.disabled = false;
           });
+          // Display the success alert
+          alert("Control updated successfully!");
         }
       }
     };
