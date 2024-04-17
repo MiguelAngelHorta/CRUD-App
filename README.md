@@ -47,6 +47,9 @@
     - This CSS script structures the visual design of the Security Control Inventory web page by defining a dark gray background with white text, styling the table with dark headers and rows, and incorporating visual cues for disabled buttons and edited rows, contributing to a cohesive and user-friendly interface.
 
 ## Dockerize this app
+- 🐳 Deploy this app using Docker
+- <img src="https://github.com/MiguelAngelHorta/MiguelAngelHorta/assets/106134627/433dd0fe-656a-47fc-aa2d-22f385febfde" alt="Screenshot" style="width: 400px; height: 100px; max-width: 100%; height: auto;">
+
 1. Download and install Docker Desktop for your OS from Docker's official website: https://docs.docker.com/engine/install/.
 2. Add a docker file to the folder
 	   # Base image for a web server
@@ -70,8 +73,12 @@
     docker run -d -p 8080:80 my-security-app
     ```
 5. Access the app through http://localhost:8080 in the browser
-
+            
 ## Host this app in AWS
+
+- ☁️ Deploy this app using AWS
+- <img src="https://github.com/MiguelAngelHorta/MiguelAngelHorta/assets/106134627/2e45ffaa-222f-40fb-8b13-a569a2bb1b25" alt="Screenshot" style="width: 400px; height: 100px; max-width: 100%; height: auto;">
+
 1. Login to AWS console
 2. create S3 bucket
 3. Load files into S3 bucket
